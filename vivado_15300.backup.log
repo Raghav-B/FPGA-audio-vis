@@ -1,0 +1,445 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr  7 17:21:59 2019
+# Process ID: 15300
+# Current directory: D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6848 D:\Raghav Stuff\Google Drive\Work\NUS\Sem 2\EE2026\Labs\EE2026_Project\Audio_Viz_Project_Template\Audio_Viz_Project_Template.xpr
+# Log file: D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/vivado.log
+# Journal file: D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Raghav Bhardwaj/Desktop/Thursday_Raghav_Bhardwaj_A0184445Y_A0184456W_Archive.xpr/Audio_Viz_Project_Template' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Voice_Scope_TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 992.637 ; gain = 108.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Voice_Scope_TOP' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Voice_Scope_TOP.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Voice_Capturer' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VOICE_CAPTURER.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'Voice_Capturer' (2#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VOICE_CAPTURER.v:20]
+INFO: [Synth 8-6157] synthesizing module 'Volume_Indicator' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/Volume_Indicator.v:22]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/seven_seg_display.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (3#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/seven_seg_display.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Volume_Indicator' (4#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/Volume_Indicator.v:22]
+WARNING: [Synth 8-689] width (4) of port connection 'volumeval' does not match port width (5) of module 'Volume_Indicator' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Voice_Scope_TOP.v:64]
+INFO: [Synth 8-6157] synthesizing module 'bar_convertor' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/moving_av_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bar_convertor' (5#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/moving_av_filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'noise_cancelling_filter' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/noise_cancelling_filter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'noise_cancelling_filter' (6#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/noise_cancelling_filter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'generate_button_clock' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'generate_button_clock' (7#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'd_flip_flop' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/d_flip_flop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'd_flip_flop' (8#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/d_flip_flop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (9#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mode_changer' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Mode: Default Waveform - type: string 
+INFO: [Synth 8-638] synthesizing module 'Font_Rom' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Font_Rom.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Font_Rom' (10#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Font_Rom.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2' (11#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:50]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:51]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized0' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Mode: Game - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized0' (11#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized0' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:59]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized0' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:60]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized1' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Mode: Frequency Meas. - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized1' (11#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized1' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:68]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized1' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:69]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized2' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Mode: Music Visualizer - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized2' (11#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized2' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:77]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized2' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'mode_changer' (12#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/mode_changer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'theme_selector' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/theme_selector.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/theme_selector.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'theme_selector' (13#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/theme_selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TestWave_Gen' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/TestWave_Gen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'TestWave_Gen' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/TestWave_Gen.v:22]
+INFO: [Synth 8-6157] synthesizing module 'draw_text' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized3' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press middle button to open options - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized3' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized3' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:67]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized3' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:68]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized4' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press middle button to close options - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized4' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized4' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:76]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized4' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:77]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized5' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw0 toggles waveform - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized5' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized5' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:84]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized5' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:85]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized6' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw1 toggles grid - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized6' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized6' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:92]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized6' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:93]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized7' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw2 toggles axes - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized7' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized7' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:100]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized7' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:101]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized8' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw3 toggles ticks - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized8' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized8' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:108]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized8' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:109]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized9' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw13 toggles noise reduction - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized9' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized9' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:116]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized9' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:117]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized10' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw14 pauses mic recording - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized10' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized10' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:124]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized10' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:125]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized11' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - sw15 toggles to test waveform - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized11' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized11' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:132]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized11' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:133]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized12' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - Use left and right buttons to change theme - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized12' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized12' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:140]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized12' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:141]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized13' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: - Use up and down buttons to change modes - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized13' (14#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized13' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:148]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized13' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:149]
+INFO: [Synth 8-6155] done synthesizing module 'draw_text' (15#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_waveform' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Draw_Waveform.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'draw_waveform' (16#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Draw_Waveform.v:6]
+INFO: [Synth 8-6157] synthesizing module 'draw_tick' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_tick.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'draw_tick' (17#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_tick.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_grid' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_grid.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'draw_grid' (18#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_grid.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_record_text' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:22]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized14' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press middle button to restart - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized14' (18#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized14' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:98]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized14' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:99]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized15' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press middle button to proceed - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized15' (18#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized15' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:106]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized15' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:107]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized16' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Recording completed - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized16' (18#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized16' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:114]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized16' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:115]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized17' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press middle button to start recording - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized17' (18#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized17' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:122]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized17' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:123]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized18' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Recording... - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized18' (18#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized18' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:130]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized18' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'game_record_text' (19#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/game_record_text.v:22]
+INFO: [Synth 8-6157] synthesizing module 'draw_game' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:23]
+INFO: [Synth 8-3876] $readmem data file 'player.mem' is read successfully [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:166]
+INFO: [Synth 8-3876] $readmem data file 'hill.mem' is read successfully [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:167]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized19' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Oh no! You Lost! - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized19' (19#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized19' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:80]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized19' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:81]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized20' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Congratulations! You won! - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized20' (19#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized20' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:89]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized20' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:90]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized21' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: HP - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized21' (19#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized21' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:98]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized21' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'draw_game' (20#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_game_background.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'draw_sound' does not match port width (10) of module 'draw_game' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Voice_Scope_TOP.v:156]
+INFO: [Synth 8-6157] synthesizing module 'draw_freq_waveform' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_waveform.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'draw_freq_waveform' (21#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_waveform.v:6]
+INFO: [Synth 8-6157] synthesizing module 'frequency_calculator' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/frequency_calculator.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_1525kHz' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/clk_div_1525kHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_1525kHz' (22#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/clk_div_1525kHz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FLICKER_ANODE' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/FLICKER_ANODE.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/FLICKER_ANODE.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'FLICKER_ANODE' (23#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/FLICKER_ANODE.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SEGMENT_DISP' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/SEGMENT_DISP.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'SEGMENT_DISP' (24#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/SEGMENT_DISP.v:21]
+WARNING: [Synth 8-6014] Unused sequential element max_amplitude_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/frequency_calculator.v:54]
+WARNING: [Synth 8-6014] Unused sequential element min_amplitude_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/frequency_calculator.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'frequency_calculator' (25#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/frequency_calculator.v:22]
+WARNING: [Synth 8-689] width (101) of port connection 'frequency' does not match port width (19) of module 'frequency_calculator' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Voice_Scope_TOP.v:169]
+INFO: [Synth 8-6157] synthesizing module 'draw_freq_text' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_text.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized22' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Use sw12 to display calculated frequency on 7seg - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized22' (25#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized22' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_text.v:45]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized22' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_text.v:46]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized23' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: This module can accurately measure between 400Hz to 10kHz - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized23' (25#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized23' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_text.v:54]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized23' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_text.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'draw_freq_text' (26#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/draw_freq_text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ball_text' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/ball_text.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized24' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press middle button to reset/randomize balls - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized24' (26#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Pixel_On_Text2.vhd:47]
+WARNING: [Synth 8-689] width (12) of port connection 'horzCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized24' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/ball_text.v:43]
+WARNING: [Synth 8-689] width (12) of port connection 'vertCoord' does not match port width (32) of module 'Pixel_On_Text2__parameterized24' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/ball_text.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ball_text' (27#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/ball_text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_bouncing_balls' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/clock_div_bouncing_balls.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_bouncing_balls' (28#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/clock_div_bouncing_balls.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ball_bounce' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/bouncing_balls.v:22]
+WARNING: [Synth 8-6014] Unused sequential element ball_start_pos_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/bouncing_balls.v:48]
+WARNING: [Synth 8-6014] Unused sequential element pos_counter_reg was removed.  [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/bouncing_balls.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'ball_bounce' (29#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/bouncing_balls.v:22]
+INFO: [Synth 8-6157] synthesizing module 'VGA_DISPLAY' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VGA_DISPLAY.v:17]
+INFO: [Synth 8-638] synthesizing module 'CLK_108M' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/CLK_108M.vhd:83]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 9.375000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/CLK_108M.vhd:125]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/CLK_108M.vhd:187]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/CLK_108M.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'CLK_108M' (30#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/CLK_108M.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'VGA_CONTROL' [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VGA_CONTROL.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'VGA_CONTROL' (31#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VGA_CONTROL.vhd:61]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_DISPLAY' (32#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VGA_DISPLAY.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Voice_Scope_TOP' (33#1) [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/Voice_Scope_TOP.v:10]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_mode_one_back[14]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_mode_one_back[9]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_mode_one_back[4]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_game_back[14]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_game_back[9]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_game_back[4]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_freq_back[14]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_freq_back[9]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_freq_back[4]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_ball_back[14]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_ball_back[9]
+WARNING: [Synth 8-3331] design VGA_DISPLAY has unconnected port VGA_ball_back[4]
+WARNING: [Synth 8-3331] design ball_bounce has unconnected port wave_sample[0]
+WARNING: [Synth 8-3331] design clock_div_bouncing_balls has unconnected port freq_20khz
+WARNING: [Synth 8-3331] design draw_game has unconnected port freq_20kHz
+WARNING: [Synth 8-3331] design game_record_text has unconnected port left_button_out
+WARNING: [Synth 8-3331] design game_record_text has unconnected port right_button_out
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[11]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[10]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[9]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[8]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[7]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[6]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[5]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[4]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[3]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[2]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[1]
+WARNING: [Synth 8-3331] design draw_text has unconnected port cur_theme_wave[0]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[11]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[10]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[9]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[8]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[7]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[6]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[5]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[4]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[3]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[2]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[1]
+WARNING: [Synth 8-3331] design TestWave_Gen has unconnected port sound_sample[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1107.043 ; gain = 222.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1107.043 ; gain = 222.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1107.043 ; gain = 222.438
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/constrs_1/imports/new/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Raghav Stuff/Google Drive/Work/NUS/Sem 2/EE2026/Labs/EE2026_Project/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/constrs_1/imports/new/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1438.055 ; gain = 553.449
+130 Infos, 178 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1438.055 ; gain = 553.449
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  7 22:41:30 2019...
